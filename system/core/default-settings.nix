@@ -24,10 +24,10 @@
   #boot.loader.grub.useOSProber = true;
 
   # Set your time zone.
-  time.timeZone = "America/Mexico_City";
+  time.timeZone = "Asia/Almaty";
 
   # Select internationalisation properties.
-  i18n.defaultLocale = "es_MX.utf8";
+  i18n.defaultLocale = "en_US.UTF-8";
 
   # Optimise store
   #nix.autoOptimiseStore = true;
@@ -35,7 +35,7 @@
 
   # Configure console keymap
   #console.keyMap = "es";
-  console.keyMap = "la-latin1";
+  console.keyMap = "us";
 
   # State Veersion
   system.stateVersion = "${xdnVersion}";

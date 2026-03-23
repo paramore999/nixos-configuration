@@ -17,7 +17,7 @@
 
   outputs = inputs@{ nixpkgs, home-manager, ... }:
   let
-  	xdnUser     = "najimi"; 
+    xdnUser     = "paramore"; 
     xdnHome     = "/home/${xdnUser}";
     xdnVersion  = "25.05";
     xdnHost     = "dead-master";
@@ -25,7 +25,7 @@
     pkgs        = nixpkgs.legacyPackages.${system};
   in
   {
-  	nixosConfigurations = {
+    nixosConfigurations = {
       # Flake load by default
       default = nixpkgs.lib.nixosSystem {
         inherit system;
@@ -33,7 +33,7 @@
           ./system/layout/configuration.nix
         ];
       };
-      # Flake load by najimi user
+      # Flake load by xdnUser user
       ${xdnUser} = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [

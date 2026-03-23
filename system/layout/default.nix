@@ -30,7 +30,7 @@
   time.timeZone = "America/Mexico_City";
 
   # Select internationalisation properties.
-  i18n.defaultLocale = "es_MX.UTF-8";
+  i18n.defaultLocale = "en_US.UTF-8";
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
@@ -41,12 +41,12 @@
 
   # Configure keymap in X11
   services.xserver.xkb = {
-    layout = "es";
+    layout = "us";
     variant = "";
   };
 
   # Configure console keymap
-  console.keyMap = "es";
+  console.keyMap = "us";
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -71,7 +71,7 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.najimi = {
+  users.users.paramore = {
     isNormalUser = true;
     description = "dead-master";
     extraGroups = [ "networkmanager" "wheel" ];

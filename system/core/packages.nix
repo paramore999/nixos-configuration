@@ -35,6 +35,8 @@
     wget
     zip
     zsh
+    firefox
+    vscode
   ];
 
   # Fonts system

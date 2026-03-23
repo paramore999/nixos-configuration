@@ -4,8 +4,8 @@
   # User
   users.users.${xdnUser} = {
     isNormalUser = true;
-    description = "Rodrigo Xdn";
-    initialPassword = "pass";
+    description = "paramore";
+    initialPassword = "Limerence5272";
     group = "users";
     extraGroups = [ 
       "wheel" 
