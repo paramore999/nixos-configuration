@@ -2,14 +2,14 @@
 #!/bin/bash
 
 #wallpaper="$HOME/Imágenes/wallpaper/104359432_p0.jpg"
-wallpaper="$HOME/Imágenes/wallpaper/974034.jpg"
+wallpaper="$HOME/Images/wallpaper/wp.jpg"
 
 
 case $1 in
 
     random)
 
-        aleatory=`find ~/Imágenes/wallpaper -type f | shuf -n 1`
+        aleatory=`find ~/Images/wallpaper -type f | shuf -n 1`
 
         cp /dev/null ~/.config/i3/scripts/.log-wallpaper
 

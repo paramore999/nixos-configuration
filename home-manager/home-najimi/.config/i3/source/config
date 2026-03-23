@@ -91,7 +91,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+q kill
 
 # Captura de Pantalla
-bindsym $mod+Shift+p exec --no-startup-id scrot -u '/home/najimi/Imágenes/screenshot-%Y%m%d-%H%M%S.png'
+bindsym $mod+Shift+p exec --no-startup-id scrot -u '/home/najimi/Images/screenshot-%Y%m%d-%H%M%S.png'
 
 # Add nitrogen to start i3
 #exec nitrogen --restore

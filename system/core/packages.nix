@@ -37,6 +37,8 @@
     zsh
     firefox
     vscode
+    pavucontrol
+    home-manager
   ];
 
   # Fonts system

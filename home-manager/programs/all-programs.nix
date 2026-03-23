@@ -31,7 +31,6 @@
     focuswriter
     glava
     go
-    google-chrome
     guake
     helix
     imagemagick
@@ -69,6 +68,7 @@
     #wpsoffice
     xfce.mousepad # -> leafpad
     xorg.xrandr
+    pavucontrol
   ];
 
 }
