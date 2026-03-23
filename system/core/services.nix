@@ -35,9 +35,9 @@
 
   # Pulse audio
   # Enable sound.
-  #sound.enable = true;
-  #hardware.pulseaudio.enable = true;
-  #hardware.pulseaudio.support32Bit = true;
+  # sound.enable = true;
+  # hardware.pulseaudio.enable = true;
+  # hardware.pulseaudio.support32Bit = true;
 
   # mpd
   #hardware.pulseaudio.extraConfig = "load-module module-native-protocol-tcp auth-ip-acl=127.0.0.1 unload-module module-bluetooth-policy";
@@ -189,6 +189,12 @@
       enable = true;
       setSocketVariable = true;
     };
+  };
+
+  # nvidia
+  hardware.nvidia = {
+    # ... other nvidia settings
+    open = true; # Set to true for open-source modules, false for proprietary
   };
 
 }

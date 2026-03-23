@@ -4,7 +4,7 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
-  services.xserver.videoDrivers = ["modesetting"];
+  services.xserver.videoDrivers = ["nvidia"];
 
   # Disable typing touchpad
   services.libinput.enable = true;
@@ -116,4 +116,7 @@
   };
   services.xserver.displayManager.gdm.enable = true;
   */
+  services.xserver.displayManager.setupCommands = ''
+    ${pkgs.xorg.xrandr}/bin/xrandr --output DP-4 --mode 1920x1080 --rate 240.00
+  '';
 }
