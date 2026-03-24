@@ -24,7 +24,6 @@
     git
     htop
     killall
-    mariadb
     mpd
     neovim
     networkmanager
@@ -36,9 +35,10 @@
     zip
     zsh
     firefox
-    vscode
     pavucontrol
     home-manager
+    libva-vdpau-driver
+    libvdpau-va-gl
   ];
 
   # Fonts system
@@ -52,9 +52,6 @@
     meslo-lg
     #vistafonts
   ];
-
-  # Adb android service
-  programs.adb.enable = true;
 
   services.openssh.enable = true;
 

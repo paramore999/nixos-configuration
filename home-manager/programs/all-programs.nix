@@ -46,7 +46,6 @@
     nodejs_22
     notable
     oneko
-    opera
     php83
     php83Packages.composer
     python3
@@ -69,6 +68,8 @@
     xfce.mousepad # -> leafpad
     xorg.xrandr
     pavucontrol
+    vscode
+    vesktop
   ];
 
 }

@@ -6,8 +6,9 @@
 
   # Configure keymap in X11
   services.xserver = {
-    xkb.layout = "us";
+    xkb.layout = "us, ru";
     xkb.variant = "";
+    xkb.options = "grp:alt_shift_toggle";
   };
 
   # Enable CUPS to print documents.
@@ -98,42 +99,46 @@
     group = "users";
     musicDirectory = "${xdnHome}/Música";
     dataDir = "${xdnHome}/.config/mpd";
-    extraConfig = ''
-      audio_output {
-        type "pulse"
-        name "pulseaudio"
-        mixer_type      "hardware"
-        mixer_device    "default"
-        mixer_control   "PCM"
-        mixer_index     "0"
-      }
-      audio_output {
-        type            "pipewire"
-        name            "pipewire"
-      }
-      audio_output {
-        type "alsa"
-        name "alsa"
-        device			"hw:0,0"
-        format			"44100:16:2"
-        mixer_type		"hardware"
-        mixer_device	"default"
-        mixer_control	"PCM"
-      }
-    '';
+    settings = {
+      audio_output = [
+        {
+          type = "pulse";
+          name = "pulseaudio";
+          mixer_type = "hardware";
+          mixer_device = "default";
+          mixer_control = "PCM";
+          mixer_index = "0";
+        }
+        {
+          type = "pipewire";
+          name = "pipewire";
+        }
+        {
+          type = "alsa";
+          name = "alsa";
+          device = "hw:0,0";
+          format = "44100:16:2";
+          mixer_type = "hardware";
+          mixer_device = "default";
+          mixer_control = "PCM";
+        }
+      ];
+    };
   };
 
   # Enable zsh
-  programs.zsh.enable = true;
+  programs.zsh = {
+    enable = true;
+    # ohMyZsh.enable = true;
+  };
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
   # Adb Android Service
-  programs.adb.enable = true;
+  # programs.adb.enable = true;
 
   services.udev.packages = [
-    pkgs.android-udev-rules
   ];
 
   # Bluetooth Service
@@ -192,10 +197,27 @@
     };
   };
 
+  programs.vscode = {
+    enable = true;
+    extensions = with pkgs.vscode-extensions; [
+      dracula-theme.theme-dracula
+      vscodevim.vim
+      yzhang.markdown-all-in-one
+    ];
+  };
+
+
   # nvidia
-  hardware.nvidia = {
-    # ... other nvidia settings
-    open = true; # Set to true for open-source modules, false for proprietary
+  hardware = {
+    graphics.enable = true;
+    nvidia = {
+      open = true;
+    };
+  };
+
+  programs.neovim = {
+    enable = true;
+    vimAlias = true;
   };
 
 }

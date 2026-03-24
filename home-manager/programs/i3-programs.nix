@@ -12,12 +12,13 @@
     glava
     lxappearance
     pcmanfm
-    picom
+    picom-pijulius
     polybar
     pywal
     rofi
     sxiv
     xclip
+    pcre
   ];
 
 }

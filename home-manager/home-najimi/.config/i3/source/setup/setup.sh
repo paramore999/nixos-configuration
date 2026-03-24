@@ -66,7 +66,7 @@ install_pkgs()
                             i3status
                             i3lock
                             i3blocks
-                            picom
+                            picom-pijulius
                             rofi
                             sakura
                             volumeicon

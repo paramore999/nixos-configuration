@@ -30,7 +30,7 @@ mpd_host = localhost
 #
 ## Needed for tag editor and file operations to work.
 ##
-mpd_music_dir = ~/Música
+mpd_music_dir = ~/Music
 #
 #mpd_crossfade_time = 5
 #

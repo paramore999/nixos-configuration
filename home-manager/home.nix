@@ -13,7 +13,7 @@
   imports = [ 
     ./programs/cava
     #./programs/element
-    ./programs/neofetch
+    #./programs/neofetch
     ./programs/waybar
     ./programs/all-programs.nix
     #./programs/dde-programs.nix

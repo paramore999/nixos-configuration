@@ -13,11 +13,11 @@ uptime=$(uptime | tr "," " " | cut -f6-8 -d" ")
 rofi_command="rofi -theme $dir/rounded-blue-simple.rasi"
 
 # Options
-shutdown=" Apagar"
-reboot=" Reinciar"
-lock=" Bloquear"
-suspend=" Hibernar"
-logout=" Cerrar sesión"
+shutdown=" Shutdown"
+reboot=" Reboot"
+lock=" Lock"
+suspend=" Suspend"
+logout=" Logout"
 
 # Confirmation
 confirm_exit() {

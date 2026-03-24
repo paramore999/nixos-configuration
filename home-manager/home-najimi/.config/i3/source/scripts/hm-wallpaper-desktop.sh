@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #!/bin/bash
 
-wallpaper="$HOME/Images/wallpaper/wp.jpg"
+wallpaper="$HOME/Images/wallpaper/wp.png"
 
 
 case $1 in

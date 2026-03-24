@@ -4,7 +4,7 @@ type=$1
 
 case $type in
 
-     volumen)
+     volume)
 
         value=$( pactl list sinks )
 
@@ -26,7 +26,7 @@ case $type in
 
      ;;
 
-    brillo)
+    brightness)
 
         brightness="$(brightlight -r)"
 
@@ -38,15 +38,15 @@ case $type in
 
     ;;
 
-    fecha)
+    datetime)
 
-        fecha=$( date '+%d/%m/%Y %H:%M' )
+        datetime=$( date '+%d/%m/%Y %H:%M' )
 
-        echo $fecha
+        echo $datetime
 
     ;;
 
-    bateria)
+    battery)
         
         info=$( upower -i /org/freedesktop/UPower/devices/battery_BAT1 | grep "percentage:" )
 
@@ -66,7 +66,7 @@ case $type in
 
     ;;
 
-    memoria)
+    memory)
 
         cpu=$( grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END { print usage }' )
 

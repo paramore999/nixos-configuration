@@ -27,7 +27,7 @@
   networking.networkmanager.enable = true;
 
   # Set your time zone.
-  time.timeZone = "America/Mexico_City";
+  time.timeZone = "Asia/Almaty";
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";

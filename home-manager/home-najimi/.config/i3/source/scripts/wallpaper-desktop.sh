@@ -2,7 +2,7 @@
 #!/bin/bash
 
 #wallpaper="$HOME/Imágenes/wallpaper/104359432_p0.jpg"
-wallpaper="$HOME/Images/wallpaper/wp.jpg"
+wallpaper="$HOME/Images/wallpaper/wp.png"
 
 
 case $1 in

@@ -89,7 +89,7 @@ ${color1}${hr}${color}
 ${color1}Host:${alignr}${color2}${nodename}${color}
 ${color1}Kernel:${color2}${alignr}$kernel${color}
 ${color1}Uptime:${color2}${alignr}${uptime}${color}
-${color1}America/Mexico_City:${color2}${alignr}${time %H:%M}${color}
+${color1}Asia/Astana:${color2}${alignr}${time %H:%M}${color}
 ${color1}UTC:${color2}${alignr}${utime %H:%M}${color}
 
 ${color1}${goto 60}Used${alignr}Size${color}
